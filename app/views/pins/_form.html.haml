@@ -2,10 +2,10 @@
   - if @pin.errors.any?
     #errors
       %h2
-      = plurallize(@pin.errors.count, "error")
+      = pluralize(@pin.errors.count, "error")
       prvented this pin from saving
       %ul
-      - @pin.errors.full_messagea.each do |msg|
+      - @pin.errors.full_messages.each do |msg|
         %li= msg
 
   .form_group
